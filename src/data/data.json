@@ -1,0 +1,374 @@
+{
+  "profile": {
+    "name": "Ayush Juneja",
+    "role": "Full Stack & Mobile App Developer",
+    "specialty": "Next.js, Node.js, E-commerce Systems, Admin Dashboards, Mobile Apps, Automation",
+    "location": "New Delhi, India",
+    "availability": "Open to full-time roles, freelance builds, and product collaborations",
+    "intro": "Full stack developer with nearly 2 years of professional experience building scalable web and mobile applications, e-commerce platforms, and business-focused digital systems.",
+    "shortBio": "Focused on end-to-end product development, backend architecture, admin systems, analytics, operational workflows, and responsive user experiences.",
+    "story": "I have worked across startup environments where product speed, scalability, and business outcomes all matter at the same time. My work spans storefronts, admin systems, mobile experiences, analytics layers, and automation-heavy workflows.",
+    "approach": "I care about building high-performance, user-centric solutions with a strong focus on reliability, scalability, and seamless experience. I like turning practical business needs into systems that feel polished and easy to operate.",
+    "values": [
+      "Scalable systems over short-term hacks",
+      "Business-first engineering decisions",
+      "Responsive and user-centric interfaces",
+      "Clean collaboration and dependable execution"
+    ],
+    "strengths": [
+      "Full stack development",
+      "Mobile app development",
+      "E-commerce systems",
+      "Backend and API development",
+      "Admin dashboard development",
+      "UI/UX implementation"
+    ],
+    "highlights": [
+      { "label": "Years experience", "value": "2+" },
+      { "label": "Core domains", "value": "6" },
+      { "label": "Featured builds", "value": "3" },
+      { "label": "GATE percentile", "value": "93" }
+    ],
+    "education": [
+      {
+        "school": "DAV Public School",
+        "degree": "Senior Secondary Education (CBSE)",
+        "period": "2019 - 2021",
+        "detail": "Completed senior secondary schooling in Delhi, India."
+      },
+      {
+        "school": "Guru Gobind Singh Indraprastha University",
+        "degree": "Bachelor of Technology (B.Tech) in Computer Science",
+        "period": "2021 - 2025",
+        "detail": "Computer Science degree focused on software engineering, system design, and scalable digital product development."
+      }
+    ],
+    "heroChips": ["Next.js", "Node.js", "E-commerce", "Admin Dashboards", "Mobile Apps", "Automation"],
+    "socialLinks": [
+      { "label": "GitHub", "href": "https://github.com/ayushj1512", "handle": "github.com/ayushj1512" },
+      { "label": "LinkedIn", "href": "https://linkedin.com", "handle": "LinkedIn" },
+      { "label": "Email", "href": "mailto:ayushjuneja999@gmail.com", "handle": "ayushjuneja999@gmail.com" }
+    ]
+  },
+  "navigation": {
+    "brand": "Ayush Juneja",
+    "links": [
+      { "label": "Work", "href": "/#projects" },
+      { "label": "About", "href": "/about" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Resume", "href": "/resume" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "cta": { "label": "Start a Project", "href": "/contact" }
+  },
+  "contact": {
+    "heading": "Need a full stack developer for products, storefronts, dashboards, or internal systems?",
+    "intro": "I work across frontend, backend, mobile, analytics, and workflow automation with a focus on real business outcomes and scalable delivery.",
+    "email": "ayushjuneja999@gmail.com",
+    "phone": "+91 98111 95362",
+    "location": "New Delhi, India",
+    "socialLinks": [
+      { "label": "GitHub", "href": "https://github.com/ayushj1512", "value": "github.com/ayushj1512" },
+      { "label": "LinkedIn", "href": "https://linkedin.com", "value": "LinkedIn" },
+      { "label": "Email", "href": "mailto:ayushjuneja999@gmail.com", "value": "ayushjuneja999@gmail.com" }
+    ]
+  },
+  "seo": {
+    "siteName": "Ayush Juneja Portfolio",
+    "defaultTitle": "Ayush Juneja | Full Stack & Mobile App Developer",
+    "defaultDescription": "Portfolio of Ayush Juneja, a full stack developer building scalable web apps, mobile products, e-commerce systems, admin dashboards, and automation workflows.",
+    "baseUrl": "https://your-domain.com",
+    "defaultImage": "https://your-domain.com/og-image.jpg",
+    "keywords": [
+      "Ayush Juneja",
+      "Full Stack Developer",
+      "Mobile App Developer",
+      "Next.js Developer",
+      "Node.js Developer",
+      "E-commerce Developer",
+      "Admin Dashboard Developer"
+    ]
+  },
+  "services": [
+    {
+      "title": "Full-Stack Development",
+      "description": "End-to-end web product development across frontend, backend, data flow, and scalable architecture."
+    },
+    {
+      "title": "Mobile App Development",
+      "description": "Cross-platform mobile experiences with Flutter and integrated backend workflows."
+    },
+    {
+      "title": "E-commerce Systems",
+      "description": "Storefronts, admin systems, analytics layers, refunds, fulfillment logic, and operations tooling."
+    },
+    {
+      "title": "Admin Dashboards",
+      "description": "Business-focused internal tools with operational visibility, analytics, and workflow control."
+    },
+    {
+      "title": "Backend & API Development",
+      "description": "REST APIs, authentication, event-driven flows, integrations, cron jobs, and scalable backend logic."
+    },
+    {
+      "title": "Automation Workflows",
+      "description": "n8n, no-code, webhook, and AI-assisted process automation for lean business systems."
+    }
+  ],
+  "techStack": [
+    {
+      "group": "Frontend",
+      "items": [
+        { "name": "React.js", "description": "Component-driven frontend applications and scalable UI systems." },
+        { "name": "Next.js", "description": "Production-grade React framework for performance, routing, and product delivery." },
+        { "name": "Vue.js", "description": "Flexible frontend development for interface-heavy product surfaces." },
+        { "name": "Nuxt.js", "description": "Vue-based application architecture for fast production builds." },
+        { "name": "Tailwind CSS", "description": "Utility-first styling for polished, responsive interfaces." },
+        { "name": "Zustand", "description": "Lean client state management for modern React products." }
+      ]
+    },
+    {
+      "group": "Backend",
+      "items": [
+        { "name": "Node.js", "description": "Core backend logic, integrations, and scalable business services." },
+        { "name": "Express.js", "description": "API architecture and server-side workflows." },
+        { "name": "REST APIs", "description": "Structured backend contracts for products and internal systems." },
+        { "name": "WebSockets", "description": "Real-time communication and live product behavior." }
+      ]
+    },
+    {
+      "group": "Database & Cloud",
+      "items": [
+        { "name": "MongoDB", "description": "Flexible database modeling for product and workflow systems." },
+        { "name": "Firebase", "description": "Realtime integrations, auth flows, and rapid app infrastructure." },
+        { "name": "SQL", "description": "Structured data querying and relational storage." },
+        { "name": "Cloudinary", "description": "Media workflows and asset delivery infrastructure." }
+      ]
+    },
+    {
+      "group": "Mobile",
+      "items": [
+        { "name": "Flutter", "description": "Cross-platform mobile app development and native-feeling interfaces." },
+        { "name": "FlutterFlow", "description": "Accelerated app workflows and visual product building." }
+      ]
+    },
+    {
+      "group": "Automation",
+      "items": [
+        { "name": "n8n", "description": "Workflow automation and business process orchestration." },
+        { "name": "Bubble.io", "description": "No-code and low-code product support where speed matters." },
+        { "name": "Webhook Systems", "description": "Cross-service event automation and backend workflows." },
+        { "name": "AI Workflow Automation", "description": "Generative AI assisted automations and business process acceleration." }
+      ]
+    },
+    {
+      "group": "Programming & Tools",
+      "items": [
+        { "name": "JavaScript", "description": "Core frontend and backend product logic." },
+        { "name": "TypeScript", "description": "Safer large-scale frontend and backend development." },
+        { "name": "Python", "description": "Automation, scripting, and AI/data-oriented workflows." },
+        { "name": "Git / GitHub", "description": "Version control, collaboration, and delivery workflows." },
+        { "name": "Postman", "description": "API validation and backend testing." },
+        { "name": "Vercel / Render / Netlify", "description": "Deployment and hosting for modern product delivery." }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "MIRAY",
+      "role": "Software Developer",
+      "period": "Dec 2025 - Present",
+      "description": "Managing end-to-end e-commerce platforms including frontend, backend, admin systems, analytics, fulfillment workflows, and operational automation.",
+      "achievements": [
+        "Built scalable business systems focused on performance and process optimization",
+        "Worked across storefronts, admin workflows, analytics, and operational automation",
+        "Improved user experience and system reliability through modern integrations"
+      ]
+    },
+    {
+      "company": "Street Style Store",
+      "role": "Software Developer",
+      "period": "Jan 2025 - Nov 2025",
+      "description": "Worked on full-stack development, e-commerce features, and business-focused digital solutions in a fast-paced startup environment.",
+      "achievements": [
+        "Contributed to UI and UX improvements across business-facing systems",
+        "Worked on performance optimization and testing workflows",
+        "Supported scalable system enhancements for e-commerce operations"
+      ]
+    },
+    {
+      "company": "Breauk Enterprises",
+      "role": "Software Developer",
+      "period": "Sep 2024 - Dec 2024",
+      "description": "Contributed to web and mobile application development with a focus on responsive UI, analytics-driven product improvements, and scalable workflows.",
+      "achievements": [
+        "Built responsive user interface improvements for web and mobile products",
+        "Supported analytics-driven enhancements and product optimization",
+        "Collaborated on scalable frontend and backend workflow delivery"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "miray-ecommerce-platform",
+      "title": "MIRAY E-commerce Platform",
+      "description": "A scalable D2C e-commerce system with admin dashboards, analytics, refund workflows, and operational automation.",
+      "summary": "Built and managed a full stack commerce platform covering storefront, backend, operations, and admin control surfaces.",
+      "type": "Full Stack E-commerce Platform",
+      "role": "Software Developer",
+      "featured": true,
+      "tags": ["Next.js", "Node.js", "Admin Dashboard", "Analytics", "Automation"],
+      "imageLabel": "MIRAY",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/ayushj1512",
+      "problem": "The business needed a scalable commerce system that could handle storefront growth, admin control, refunds, and operational complexity without tool sprawl.",
+      "solution": "Developed an end-to-end platform with business-focused dashboards, fulfillment logic, analytics visibility, and automation-friendly workflows.",
+      "features": ["Admin dashboards", "Refund workflows", "Operational automation", "Analytics and performance tracking"],
+      "impact": ["Created a scalable D2C commerce foundation", "Improved operational workflow visibility", "Supported business process optimization through integrated systems"],
+      "screenshots": ["Storefront", "Admin dashboard", "Operations workflow"]
+    },
+    {
+      "slug": "hirehead-ai",
+      "title": "HireHead AI",
+      "description": "An AI recruitment platform for interview workflows and resume analysis using machine learning and NLP.",
+      "summary": "Built an AI-powered hiring product focused on candidate screening and interview intelligence.",
+      "type": "AI Recruitment Platform",
+      "role": "Full Stack Developer",
+      "featured": true,
+      "tags": ["AI", "NLP", "Machine Learning", "React", "Node.js"],
+      "imageLabel": "HIRE",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/ayushj1512",
+      "problem": "Recruitment workflows often require repetitive resume screening and unstructured interview evaluation.",
+      "solution": "Developed a platform that supports AI-powered interview assistance and resume analysis through ML and NLP workflows.",
+      "features": ["Resume analysis", "Interview intelligence", "AI-powered candidate screening", "Structured recruitment workflows"],
+      "impact": ["Reduced manual recruitment effort", "Added intelligence to candidate evaluation workflows", "Improved structure in hiring operations"],
+      "screenshots": ["Candidate dashboard", "AI analysis", "Interview workflow"]
+    },
+    {
+      "slug": "foton-power",
+      "title": "Foton Power",
+      "description": "A photography e-commerce platform with responsive UI, analytics integration, and scalable frontend architecture.",
+      "summary": "Built a modern commerce experience with product presentation, performance-aware frontend patterns, and analytics support.",
+      "type": "Photography E-commerce Platform",
+      "role": "Frontend / Full Stack Developer",
+      "featured": true,
+      "tags": ["E-commerce", "Responsive UI", "Analytics", "Frontend Architecture"],
+      "imageLabel": "FOTON",
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/ayushj1512",
+      "problem": "The product needed a modern e-commerce interface that could balance strong presentation with scalable technical structure.",
+      "solution": "Developed a responsive commerce platform with analytics integration and a frontend architecture designed for scale.",
+      "features": ["Responsive UI", "Analytics integration", "Scalable frontend architecture", "Product-focused user flows"],
+      "impact": ["Improved commerce presentation and responsiveness", "Strengthened frontend maintainability", "Enabled better analytics visibility"],
+      "screenshots": ["Landing page", "Catalog view", "Product flow"]
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "building-business-focused-systems",
+      "title": "Building Business-Focused Systems That Actually Scale",
+      "excerpt": "Why scalable architecture only matters when it also makes day-to-day business workflows easier.",
+      "publishedAt": "2026-03-10",
+      "readTime": "6 min read",
+      "tags": ["Systems", "Full Stack", "Architecture"],
+      "content": [
+        {
+          "heading": "Scalability Is a Business Problem First",
+          "body": "Scalable software is not only about handling more traffic. It is about making sure product, operations, and business workflows remain stable as the company grows."
+        },
+        {
+          "heading": "Good Systems Reduce Friction",
+          "body": "The best backend and admin systems create fewer repeated tasks, fewer hidden dependencies, and clearer operational visibility."
+        }
+      ]
+    },
+    {
+      "slug": "why-admin-dashboards-need-product-thinking",
+      "title": "Why Admin Dashboards Need Product Thinking",
+      "excerpt": "Internal tools deserve the same clarity, responsiveness, and UX discipline as customer-facing products.",
+      "publishedAt": "2026-02-04",
+      "readTime": "5 min read",
+      "tags": ["Dashboards", "Product", "UX"],
+      "content": [
+        {
+          "heading": "Internal Tools Still Shape Performance",
+          "body": "If a team spends hours inside a dashboard, that interface has a direct impact on output, error rate, and operational speed."
+        },
+        {
+          "heading": "Good UX Helps Teams Move Faster",
+          "body": "Well-designed admin systems reduce handoffs, improve confidence, and make business workflows easier to manage."
+        }
+      ]
+    },
+    {
+      "slug": "automation-without-chaos",
+      "title": "Automation Without Chaos",
+      "excerpt": "Automation works best when it removes repetitive effort without making systems harder to understand.",
+      "publishedAt": "2026-01-21",
+      "readTime": "4 min read",
+      "tags": ["Automation", "Workflows", "AI"],
+      "content": [
+        {
+          "heading": "The Goal Is Reliability",
+          "body": "Automation should make processes more dependable, not more fragile. Clear inputs, traceable outputs, and simple monitoring matter."
+        },
+        {
+          "heading": "Business Workflows Need Visibility",
+          "body": "Teams trust automation more when they can see what happened, what changed, and what still needs human judgment."
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Product Team Placeholder",
+      "role": "Founder / Manager",
+      "quote": "Ayush brings both engineering discipline and practical product thinking. He works well on real business systems, not just polished demos."
+    },
+    {
+      "name": "Operations Stakeholder Placeholder",
+      "role": "Operations Lead",
+      "quote": "He understands how business workflows actually work and translates that into systems that feel cleaner and easier to use."
+    },
+    {
+      "name": "Collaboration Placeholder",
+      "role": "Team Lead",
+      "quote": "Reliable, fast, and thoughtful. He contributes across frontend, backend, and system-level product decisions with strong ownership."
+    }
+  ],
+  "resume": {
+    "downloadLabel": "Download Resume",
+    "downloadUrl": "/Ayush.Juneja CV.pdf",
+    "summary": "Full stack developer with experience across scalable web and mobile applications, e-commerce platforms, admin systems, analytics, backend architecture, and workflow automation.",
+    "education": [
+      { "school": "DAV Public School", "degree": "Senior Secondary Education (CBSE)", "period": "2019 - 2021" },
+      { "school": "Guru Gobind Singh Indraprastha University", "degree": "B.Tech in Computer Science", "period": "2021 - 2025" }
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Vue.js",
+      "Nuxt.js",
+      "Node.js",
+      "Express.js",
+      "Flutter",
+      "MongoDB",
+      "Firebase",
+      "SQL",
+      "REST APIs",
+      "Automation",
+      "Admin Dashboards",
+      "E-commerce Systems"
+    ],
+    "achievements": [
+      "Scored 91 percentile in GATE 2025 and 93 percentile in GATE 2026",
+      "Achieved 2nd position in the Microsoft Azure powered GitHub Quiz and Crack the Code competition",
+      "Worked across web, mobile, e-commerce, analytics, and business-focused operational systems"
+    ],
+    "certifications": [
+      "Microsoft Career Essentials in Software Development",
+      "Google Digital Marketing & E-commerce"
+    ]
+  }
+}
