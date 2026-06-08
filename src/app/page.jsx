@@ -6,7 +6,6 @@ import FeaturedProjects from "@/components/home/FeaturedProjects";
 import Hero797 from "@/components/home/Hero797";
 import ServicesPreview from "@/components/home/ServicesPreview";
 import TechStackPreview from "@/components/home/TechStackPreview";
-import TestimonialsPreview from "@/components/home/TestimonialsPreview";
 import { profile } from "@/data/profile";
 import { generatePageMetadata } from "@/lib/metadata";
 
@@ -25,7 +24,6 @@ export default function HomePage() {
       <ExperiencePreview />
       <TechStackPreview />
       <ServicesPreview />
-      <TestimonialsPreview />
       <BlogPreview />
       <ContactCTA />
     </main>

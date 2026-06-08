@@ -44,13 +44,81 @@ a {
   text-decoration: none;
 }
 
-@media (pointer: fine) {
-  html,
-  body,
-  a,
-  button,
-  input,
-  textarea {
-    cursor: none;
+@keyframes cursor-pulse {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.72);
   }
+  35% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+}
+
+@keyframes cursor-tap {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.82);
+  }
+  45% {
+    opacity: 0.38;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.28);
+  }
+}
+
+@keyframes loader-signature-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.92;
+  }
+  50% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes loader-underline-glow {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scaleX(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.04);
+  }
+}
+
+@keyframes loader-dot-bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  40% {
+    transform: translateY(-7px);
+    opacity: 1;
+  }
+}
+
+.loader-signature {
+  animation: loader-signature-float 2.8s ease-in-out infinite;
+}
+
+.loader-signature-underline {
+  animation: loader-underline-glow 2.6s ease-in-out infinite;
+}
+
+.loader-dot {
+  animation: loader-dot-bounce 1s ease-in-out infinite;
 }

@@ -6,9 +6,24 @@
     "location": "New Delhi, India",
     "availability": "Open to full-time roles, freelance builds, and product collaborations",
     "intro": "Full stack developer with nearly 2 years of professional experience building scalable web and mobile applications, e-commerce platforms, and business-focused digital systems.",
-    "shortBio": "Focused on end-to-end product development, backend architecture, admin systems, analytics, operational workflows, and responsive user experiences.",
-    "story": "I have worked across startup environments where product speed, scalability, and business outcomes all matter at the same time. My work spans storefronts, admin systems, mobile experiences, analytics layers, and automation-heavy workflows.",
-    "approach": "I care about building high-performance, user-centric solutions with a strong focus on reliability, scalability, and seamless experience. I like turning practical business needs into systems that feel polished and easy to operate.",
+    "shortBio": "I build product systems that balance engineering depth, business clarity, and interface quality across web, mobile, commerce, and internal tools.",
+    "aboutLead": "I am a full stack developer who enjoys building products that need both strong technical foundations and a clean, confident user experience.",
+    "story": "My work has grown inside startup-style environments where speed matters, but so do reliability, maintainability, and business impact. That has pushed me toward building systems that are not only functional, but genuinely useful for the people operating them every day.",
+    "approach": "I like working across the full product surface: frontend polish, backend architecture, admin workflows, analytics, integrations, and automation. The goal is usually the same: turn messy operational needs into products that feel simpler, faster, and easier to trust.",
+    "workApproach": [
+      {
+        "title": "Business-first product thinking",
+        "description": "I try to understand the operational goal behind every feature so the solution helps the business, not just the codebase."
+      },
+      {
+        "title": "Full-stack ownership",
+        "description": "I am comfortable moving from interface decisions to backend contracts, data flow, and system behavior without losing continuity."
+      },
+      {
+        "title": "Calm, scalable execution",
+        "description": "I prefer systems that are clean to operate, predictable to maintain, and ready to grow with the product."
+      }
+    ],
     "values": [
       "Scalable systems over short-term hacks",
       "Business-first engineering decisions",
@@ -26,7 +41,7 @@
     "highlights": [
       { "label": "Years experience", "value": "2+" },
       { "label": "Core domains", "value": "6" },
-      { "label": "Featured builds", "value": "3" },
+      { "label": "Featured builds", "value": "5" },
       { "label": "GATE percentile", "value": "93" }
     ],
     "education": [
@@ -53,7 +68,7 @@
   "navigation": {
     "brand": "Ayush Juneja",
     "links": [
-      { "label": "Work", "href": "/#projects" },
+      { "label": "Work", "href": "/projects" },
       { "label": "About", "href": "/about" },
       { "label": "Blog", "href": "/blog" },
       { "label": "Resume", "href": "/resume" },
@@ -75,10 +90,32 @@
   },
   "seo": {
     "siteName": "Ayush Juneja Portfolio",
+    "siteShortName": "Ayush Juneja",
     "defaultTitle": "Ayush Juneja | Full Stack & Mobile App Developer",
     "defaultDescription": "Portfolio of Ayush Juneja, a full stack developer building scalable web apps, mobile products, e-commerce systems, admin dashboards, and automation workflows.",
     "baseUrl": "https://your-domain.com",
     "defaultImage": "https://your-domain.com/og-image.jpg",
+    "locale": "en_US",
+    "language": "en",
+    "category": "technology",
+    "creator": "Ayush Juneja",
+    "publisher": "Ayush Juneja",
+    "author": {
+      "name": "Ayush Juneja",
+      "url": "https://your-domain.com"
+    },
+    "twitterHandle": "@yourhandle",
+    "robots": {
+      "index": true,
+      "follow": true,
+      "googleBot": {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    },
     "keywords": [
       "Ayush Juneja",
       "Full Stack Developer",
@@ -210,22 +247,143 @@
   ],
   "projects": [
     {
-      "slug": "miray-ecommerce-platform",
-      "title": "MIRAY E-commerce Platform",
-      "description": "A scalable D2C e-commerce system with admin dashboards, analytics, refund workflows, and operational automation.",
-      "summary": "Built and managed a full stack commerce platform covering storefront, backend, operations, and admin control surfaces.",
-      "type": "Full Stack E-commerce Platform",
-      "role": "Software Developer",
+      "slug": "bookleaf-author-support-communication-portal",
+      "title": "BookLeaf Author Support & Communication Portal",
+      "description": "A production-oriented support operations portal built for author communication, ticket lifecycle management, realtime collaboration, and AI-assisted admin workflows.",
+      "summary": "Built a practical support and communication system for BookLeaf with real-time ticket handling, AI-generated admin assistance, role-based access control, and scalable backend workflows designed around real operational needs.",
+      "type": "Author Support Operations Portal",
+      "role": "Full Stack Developer",
       "featured": true,
-      "tags": ["Next.js", "Node.js", "Admin Dashboard", "Analytics", "Automation"],
+      "tags": ["Next.js", "React", "Express.js", "MongoDB", "Socket.io", "Swagger", "AI Workflows", "RBAC"],
+      "imageLabel": "BOOKLEAF",
+      "liveUrl": "https://bookleaf-frontend-two.vercel.app",
+      "backendUrl": "https://bookleaf-backend-5lz0.onrender.com",
+      "docsUrl": "https://bookleaf-backend-5lz0.onrender.com/api/docs",
+      "links": [
+        { "label": "Author Portal", "href": "https://bookleaf-frontend-two.vercel.app" },
+        { "label": "Admin Portal", "href": "https://bookleaf-frontend-two.vercel.app" },
+        { "label": "Backend API", "href": "https://bookleaf-backend-5lz0.onrender.com" },
+        { "label": "Swagger Docs", "href": "https://bookleaf-backend-5lz0.onrender.com/api/docs" }
+      ],
+      "problem": "BookLeaf needed a support workflow that could help the team manage author communication faster, more consistently, and with reduced manual effort. The challenge was not just building a polished demo, but designing practical ticket lifecycle management, admin actions, AI-assisted responses, and realtime communication that reflect real support operations.",
+      "solution": "Built a full stack author support and communication portal using Next.js, Express.js, MongoDB, Socket.io, and AI-assisted workflows. The system prioritizes clean backend architecture, realtime ticket communication, role-based access control, scalable ticket management, and production-oriented API design. AI response generation was grounded in BookLeaf-specific knowledge, communication guidelines, and operational policy prompts to keep admin assistance contextual and useful.",
+      "features": [
+        "Real-time ticket communication and status updates with Socket.io",
+        "AI-assisted draft responses for admin workflows",
+        "Role-based access control for superadmin, admin, and author accounts",
+        "Scalable ticket lifecycle management and categorisation flows",
+        "Production-oriented REST API structure with Swagger documentation",
+        "Realtime read synchronization and live support interactions",
+        "Practical admin usability built around support operations"
+      ],
+      "impact": [
+        "Demonstrated how AI can assist support teams without removing human review",
+        "Created a realistic operations-focused system rather than a cosmetic assignment demo",
+        "Balanced clean engineering, product thinking, and practical workflow reliability under a tight timeline",
+        "Established a scalable base for future analytics, SLA tracking, workflow automation, and queue-driven AI processing"
+      ],
+      "workflow": [
+        "Author creates or updates a support ticket",
+        "Admins receive realtime updates and ticket activity",
+        "AI drafts contextual support responses using BookLeaf policies and knowledge",
+        "Admin reviews, edits, and sends the final response",
+        "Ticket status, priority, and category are updated through the lifecycle",
+        "Conversations stay synchronized live between authors and support staff"
+      ],
+      "demoCredentials": [
+        { "role": "Superadmin", "email": "admin@bookleaf.com", "password": "Bookleaf@123" },
+        { "role": "Admin", "email": "ops@bookleaf.com", "password": "Bookleaf@123" },
+        { "role": "Author Account 1", "email": "priya.sharma@email.com", "password": "Bookleaf@123" },
+        { "role": "Author Account 2", "email": "rohit.kapoor@email.com", "password": "Bookleaf@123" }
+      ],
+      "screenshots": ["Ticket dashboard", "Realtime conversation thread", "Admin support workspace"]
+    },
+    {
+      "slug": "creator-intelligence-platform-ai-rag",
+      "title": "Creator Intelligence Platform",
+      "description": "An AI-powered creator analysis and RAG platform that turns YouTube and Instagram content into a searchable knowledge base with contextual conversations.",
+      "summary": "Built a full stack creator intelligence platform that extracts creator content, generates vector embeddings, stores knowledge in ChromaDB, and enables grounded AI conversations using Retrieval Augmented Generation.",
+      "type": "AI + RAG Creator Intelligence Platform",
+      "role": "Full Stack Developer",
+      "featured": true,
+      "tags": ["Next.js", "FastAPI", "OpenAI", "LangChain", "ChromaDB", "RAG", "Semantic Search"],
+      "imageLabel": "RAG",
+      "liveUrl": "https://creator-rag-chatbot-opal.vercel.app/",
+      "backendUrl": "https://creator-rag-chatbot-xapr.onrender.com/",
+      "apiHealthUrl": "https://creator-rag-chatbot-xapr.onrender.com/",
+      "githubUrl": "https://github.com/AyushJuneja505",
+      "links": [
+        { "label": "Live Frontend", "href": "https://creator-rag-chatbot-opal.vercel.app/" },
+        { "label": "Backend API", "href": "https://creator-rag-chatbot-xapr.onrender.com/" },
+        { "label": "API Health Check", "href": "https://creator-rag-chatbot-xapr.onrender.com/" },
+        { "label": "GitHub", "href": "https://github.com/AyushJuneja505" }
+      ],
+      "problem": "Brands, agencies, and marketing teams often spend significant time manually reviewing creator content, engagement patterns, and audience performance before making collaboration decisions. The process is slow, repetitive, and difficult to scale across multiple creators.",
+      "solution": "Built an AI-powered creator intelligence workflow where users submit creator URLs, content and metadata are extracted, transcripts are chunked, embeddings are generated, knowledge is stored in ChromaDB, and OpenAI produces grounded answers using retrieved creator context.",
+      "features": [
+        "YouTube and Instagram creator analysis",
+        "Creator metadata extraction and performance insights",
+        "Context-aware AI chat for creator-specific conversations",
+        "Retrieval Augmented Generation with streaming responses",
+        "Semantic vector search using ChromaDB",
+        "Transcript processing, chunking, and embedding generation",
+        "Creator comparison and knowledge retrieval workflow"
+      ],
+      "impact": [
+        "Turned creator content into an intelligent and searchable knowledge platform",
+        "Reduced manual review effort for collaboration and evaluation workflows",
+        "Demonstrated practical implementation of RAG, vector databases, and semantic search",
+        "Showcased a production-style Next.js and FastAPI full stack architecture for AI products"
+      ],
+      "screenshots": ["Creator analysis dashboard", "RAG chat interface", "Insight and comparison workflow"]
+    },
+    {
+      "slug": "miray-ecommerce-platform",
+      "title": "Miray Fashions Commerce Ecosystem",
+      "description": "A production-grade fashion commerce operating system built to manage storefront, inventory, logistics, returns, CRM, reporting, marketing, and admin workflows in one unified platform.",
+      "summary": "Built Miray Fashions as a complete commerce ecosystem rather than a simple online store, covering the full lifecycle of a fashion business from product creation and inventory planning to customer acquisition, order fulfillment, returns, analytics, and customer retention.",
+      "type": "Full Stack Fashion Commerce Ecosystem",
+      "role": "Sole Full Stack Developer and Technical Lead",
+      "featured": true,
+      "tags": ["Next.js", "React", "Node.js", "Express.js", "MongoDB", "Zustand", "Firebase Auth", "Cloudinary", "Razorpay", "Shiprocket", "BlueDart", "EShipz"],
       "imageLabel": "MIRAY",
-      "liveUrl": "https://example.com",
+      "liveUrl": "https://mirayfashions.com",
       "githubUrl": "https://github.com/ayushj1512",
-      "problem": "The business needed a scalable commerce system that could handle storefront growth, admin control, refunds, and operational complexity without tool sprawl.",
-      "solution": "Developed an end-to-end platform with business-focused dashboards, fulfillment logic, analytics visibility, and automation-friendly workflows.",
-      "features": ["Admin dashboards", "Refund workflows", "Operational automation", "Analytics and performance tracking"],
-      "impact": ["Created a scalable D2C commerce foundation", "Improved operational workflow visibility", "Supported business process optimization through integrated systems"],
-      "screenshots": ["Storefront", "Admin dashboard", "Operations workflow"]
+      "links": [
+        { "label": "Live Store", "href": "https://mirayfashions.com" },
+        { "label": "GitHub", "href": "https://github.com/ayushj1512" }
+      ],
+      "problem": "Miray Fashions needed more than a conventional e-commerce website. The business required a centralized system capable of handling high product volumes, large order volumes, customer lifecycle management, logistics, returns, exchanges, reporting, marketing operations, and team collaboration without relying on disconnected third-party tools.",
+      "solution": "Designed and developed a complete fashion commerce operating system with a mobile-first customer storefront, custom admin and order workflows, inventory tracking, COD verification automation, logistics integrations, returns and exchanges management, production planning, CRM insights, content management, and business intelligence dashboards. The platform unified storefront management, logistics, support, reporting, and automation into one tailored system.",
+      "features": [
+        "Mobile-first storefront with product discovery across categories, collections, search, trending products, and new arrivals",
+        "Detailed product pages with image galleries, pricing logic, recommendations, reviews, and related products",
+        "Customer account system with order tracking, addresses, returns, exchanges, reviews, and wishlist support",
+        "Persistent cart, coupons, Razorpay integration, cash on delivery, dynamic shipping calculations, and optimized checkout",
+        "Real-time inventory control with size-wise stock tracking, reservations, available inventory, and production requirements",
+        "Custom order lifecycle management for pending, processing, packed, shipped, delivered, returned, exchanged, and RTO flows",
+        "COD verification automation with customer confirmation, response handling, admin visibility, and auto-cancellation workflows",
+        "Direct logistics integrations with Shiprocket, BlueDart, and EShipz APIs for serviceability, shipments, AWB, labels, and tracking",
+        "Dedicated returns, exchanges, and refund workflows for both customers and administrators",
+        "Customer analytics, review automation, campaign tracking, short links, traffic attribution, and reporting dashboards",
+        "Production management, custom CMS, and role-based admin access for products, orders, marketing, media, and reports"
+      ],
+      "impact": [
+        "Transformed Miray from a standard online store into a complete business operating system",
+        "Reduced dependency on fragmented SaaS tools by centralizing operations into one platform",
+        "Improved operational efficiency across fulfillment, returns, logistics, support, and reporting workflows",
+        "Created a scalable foundation for a fashion brand to manage customer experience and business intelligence together",
+        "Demonstrated deep expertise in e-commerce architecture, business automation, logistics integrations, and admin system design"
+      ],
+      "workflow": [
+        "Customers discover products through categories, collections, search, and featured merchandising",
+        "Orders move through checkout, payment, shipping calculation, and confirmation workflows",
+        "Inventory updates in real time with size-wise stock, reservations, and production requirements",
+        "Admins process orders, generate shipping labels, monitor courier updates, and manage cancellations",
+        "Returns, exchanges, refunds, and COD verification are handled through dedicated operational workflows",
+        "Business teams use CRM insights, marketing attribution, CMS tools, and reporting dashboards to drive growth"
+      ],
+      "screenshots": ["Fashion storefront", "Order and inventory dashboard", "Returns and operations workflow"]
     },
     {
       "slug": "hirehead-ai",
@@ -318,23 +476,6 @@
           "body": "Teams trust automation more when they can see what happened, what changed, and what still needs human judgment."
         }
       ]
-    }
-  ],
-  "testimonials": [
-    {
-      "name": "Product Team Placeholder",
-      "role": "Founder / Manager",
-      "quote": "Ayush brings both engineering discipline and practical product thinking. He works well on real business systems, not just polished demos."
-    },
-    {
-      "name": "Operations Stakeholder Placeholder",
-      "role": "Operations Lead",
-      "quote": "He understands how business workflows actually work and translates that into systems that feel cleaner and easier to use."
-    },
-    {
-      "name": "Collaboration Placeholder",
-      "role": "Team Lead",
-      "quote": "Reliable, fast, and thoughtful. He contributes across frontend, backend, and system-level product decisions with strong ownership."
     }
   ],
   "resume": {

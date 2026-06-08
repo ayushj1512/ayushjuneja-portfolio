@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "next dev",
+    "dev": "powershell -NoProfile -Command \"if (Test-Path .next) { Remove-Item -LiteralPath .next -Recurse -Force }; & .\\node_modules\\.bin\\next dev --hostname 127.0.0.1 --port 3056\"",
+    "dev:fast": "next dev --hostname 127.0.0.1 --port 3056",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
