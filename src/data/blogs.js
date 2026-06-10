@@ -4,6 +4,15 @@ import path from "node:path";
 
 const blogsDirectory = path.join(process.cwd(), "src", "data", "blogs");
 
+function cleanJson(raw = "") {
+  return raw
+    .replace(/^\uFEFF/, "")
+    .replace(/^```json\s*/i, "")
+    .replace(/^```\s*/i, "")
+    .replace(/\s*```$/i, "")
+    .trim();
+}
+
 function parseMarkdownContent(markdown = "") {
   const lines = markdown.split("\n");
   const blocks = [];
@@ -15,19 +24,13 @@ function parseMarkdownContent(markdown = "") {
 
   const flushParagraph = () => {
     if (!paragraph.length) return;
-    blocks.push({
-      type: "paragraph",
-      text: paragraph.join(" ").trim()
-    });
+    blocks.push({ type: "paragraph", text: paragraph.join(" ").trim() });
     paragraph = [];
   };
 
   const flushList = () => {
     if (!listItems.length) return;
-    blocks.push({
-      type: "list",
-      items: [...listItems]
-    });
+    blocks.push({ type: "list", items: [...listItems] });
     listItems = [];
   };
 
@@ -36,7 +39,7 @@ function parseMarkdownContent(markdown = "") {
     blocks.push({
       type: "code",
       language: codeLanguage,
-      code: codeLines.join("\n")
+      code: codeLines.join("\n"),
     });
     codeLines = [];
     codeLanguage = "";
@@ -83,7 +86,7 @@ function parseMarkdownContent(markdown = "") {
       blocks.push({
         type: "heading",
         level: 2,
-        text: line.replace(/^##\s+/, "")
+        text: line.replace(/^##\s+/, ""),
       });
       continue;
     }
@@ -94,7 +97,7 @@ function parseMarkdownContent(markdown = "") {
       blocks.push({
         type: "heading",
         level: 3,
-        text: line.replace(/^###\s+/, "")
+        text: line.replace(/^###\s+/, ""),
       });
       continue;
     }
@@ -115,38 +118,58 @@ function parseMarkdownContent(markdown = "") {
   return blocks;
 }
 
-function normalizeBlog(post) {
+function normalizeBlog(post = {}) {
   return {
     ...post,
+    title: post.title || "Untitled Blog",
+    slug: post.slug || "",
+    excerpt: post.excerpt || "",
     coverImage: post.coverImage || post.image || null,
     category: post.category || "Insights",
     featured: Boolean(post.featured),
+    readTime: post.readTime || "5 min read",
+    publishedAt: post.publishedAt || "",
     tags: Array.isArray(post.tags) ? post.tags : [],
-    contentBlocks: typeof post.content === "string" ? parseMarkdownContent(post.content) : []
+    content: post.content || "",
+    contentBlocks:
+      typeof post.content === "string" ? parseMarkdownContent(post.content) : [],
   };
 }
 
 function loadBlogsFromFolder() {
+  if (!fs.existsSync(blogsDirectory)) return [];
+
   const filenames = fs
     .readdirSync(blogsDirectory)
     .filter((file) => file.endsWith(".json"));
 
   return filenames
     .map((filename) => {
-      const filePath = path.join(blogsDirectory, filename);
-      const raw = fs.readFileSync(filePath, "utf8");
-      return normalizeBlog(JSON.parse(raw));
+      try {
+        const filePath = path.join(blogsDirectory, filename);
+        const raw = fs.readFileSync(filePath, "utf8");
+        const cleaned = cleanJson(raw);
+
+        return normalizeBlog(JSON.parse(cleaned));
+      } catch (error) {
+        console.error(`Failed to parse blog file: ${filename}`, error);
+        return null;
+      }
     })
+    .filter(Boolean)
     .sort((a, b) => {
       const featuredDelta = Number(b.featured) - Number(a.featured);
       if (featuredDelta !== 0) return featuredDelta;
 
-      return new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime();
+      return (
+        new Date(b.publishedAt || 0).getTime() -
+        new Date(a.publishedAt || 0).getTime()
+      );
     });
 }
 
 export const blogs = loadBlogsFromFolder();
 
 export function getBlogBySlug(slug) {
-  return blogs.find((post) => post.slug === slug);
+  return blogs.find((post) => post.slug === slug) || null;
 }
